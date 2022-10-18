@@ -1,0 +1,27 @@
+/* main color text #757575;*/
+/* second color text#212121;*/
+/* main color background  */
+/* second color background */
+/* accent color #2196F3;*/
+/* footer color bacrground #2F303A; */
+/* white #FFFFFF;  */
+:root {
+    --primary-text-color:#757575;
+    --title-text-color:#212121;
+    --accent-color:#2196F3;
+    --primary-white-color: #ffffff;
+}
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+}
+.list {
+   list-style: none; 
+}
+.logo {
+    color: var(--title-text-color);
+}
+.logo:hover {
+    color: var(--accent-color);
+}
