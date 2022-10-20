@@ -25,11 +25,13 @@ body {
 }
 /* изменить в п Особливості line-height: 1.2; нам 1,7 */
 
-.list,
+/* .list, */
 .team-list,
 .site-nav-list,
 .feature-list,
-.work-list {
+.work-list,
+.team-list,
+.address-list {
    list-style: none; 
 }
 
@@ -110,10 +112,36 @@ body {
     line-height: 1.7;
 }
 /* Чим ми займаємося */
-.work-title {
-
+.work-title,
+.team-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
 }
 .work-foto {
-    
+
+}
+/* Наша команда */
+.team-img {
+
+}
+.team-name {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+.team-work {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+}
+/* footer */
+.address-down {
+    color: var(--primary-white-color);
+    background-color: var(--title-text-color);
+    line-height: 1.71;
 }
 
