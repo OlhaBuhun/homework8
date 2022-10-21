@@ -58,6 +58,9 @@ body {
 .logo-color-blue {
     color: var(--accent-color);
 }
+.logo-color-white {
+    color: var(--primary-white-color);
+}
 /* Site nav */
 .site-nav-link,
 .address-up {
@@ -78,11 +81,13 @@ body {
 .address-up:focus {
     color: var(--accent-color);
 }
+
+                    /* Студія */
+
 /* Main */
 /* Шапка */
 .hero-title {
     color: var(--primary-white-color);
-    background-color: var(--title-text-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -141,7 +146,14 @@ body {
 /* footer */
 .address-down {
     color: var(--primary-white-color);
-    background-color: var(--title-text-color);
     line-height: 1.71;
 }
+.footer,
+.hero {
+    background-color: var(--primary-text-color);
+}
+
+                    /* Партфоліо */
+
+/* main */
 
