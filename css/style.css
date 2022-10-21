@@ -31,7 +31,8 @@ body {
 .feature-list,
 .work-list,
 .team-list,
-.address-list {
+.address-list,
+.filter-button-list {
    list-style: none; 
 }
 
@@ -78,9 +79,11 @@ body {
 .site-nav-link:hover,
 .site-nav-link:focus,
 .address-up:hover,
-.address-up:focus {
+.address-up:focus,
+.current {
     color: var(--accent-color);
 }
+
 
                     /* Студія */
 
@@ -98,6 +101,7 @@ body {
 .hero-button {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -156,4 +160,11 @@ body {
                     /* Партфоліо */
 
 /* main */
-
+.filter-button {
+    color: var(--title-text-color);
+    background-color: var(--primary-text-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;   
+}
