@@ -10,6 +10,7 @@
     --title-text-color:#212121;
     --accent-color:#2196F3;
     --primary-white-color: #ffffff;
+    --fist-color-bcg-button: #F5F4FA;
 }
 
 body {
@@ -32,7 +33,8 @@ body {
 .work-list,
 .team-list,
 .address-list,
-.filter-button-list {
+.filter-list,
+.partfolio-list {
    list-style: none; 
 }
 
@@ -85,7 +87,7 @@ body {
 }
 
 
-                    /* Студія */
+/* Студія */
 
 /* Main */
 /* Шапка */
@@ -157,14 +159,37 @@ body {
     background-color: var(--primary-text-color);
 }
 
-                    /* Партфоліо */
+/* Партфоліо */
 
 /* main */
 .filter-button {
     color: var(--title-text-color);
-    background-color: var(--primary-text-color);
+    background-color: var(--fist-color-bcg-button);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;   
 }
+.filter-button:hover,
+.filter-button:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+/* Partfolio */
+.partfolio-foto {
+
+}
+.partfolio-title {
+color: var(--title-text-color);
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+}
+.partfolio-name {
+color: var(--primary-text-color);
+font-size: 16px;
+line-height: 1.88;
+}
+
