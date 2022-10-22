@@ -26,6 +26,9 @@ body {
     letter-spacing: 0.03em;
 
 }
+address {
+    font-style: normal;
+}
 /* изменить в п Особливості line-height: 1.2; нам 1,7 */
 
 /* .list, */
@@ -42,7 +45,8 @@ body {
 
 .logo,
 .site-nav-link,
-.address-up {
+.address-up,
+.address-down {
     text-decoration: none; 
 }
 
@@ -66,7 +70,8 @@ body {
 }
 /* Site nav */
 .site-nav-link,
-.address-up {
+.address-up,
+.address-down {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -159,13 +164,17 @@ body {
     font-size: 16px;
 }
 /* footer */
-.address-down {
+.address-down,
+.address-name {
     color: var(--primary-white-color);
     line-height: 1.71;
 }
 .footer,
 .hero {
     background-color: var(--footer-color);
+}
+.address-name {
+
 }
 
 /* Партфоліо */
