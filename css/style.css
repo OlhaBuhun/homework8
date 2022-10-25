@@ -29,24 +29,30 @@ body {
 address {
     font-style: normal;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
 /* изменить в п Особливості line-height: 1.2; нам 1,7 */
 
 /* .list, */
-.team-list,
-.site-nav-list,
-.feature-list,
-.work-list,
-.team-list,
-.address-list,
-.filter-list,
-.partfolio-list {
+.list {
    list-style: none; 
 }
 
-.logo,
-.site-nav-link,
-.address-up,
-.address-down {
+.link {
     text-decoration: none; 
 }
 
