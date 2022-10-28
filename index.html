@@ -13,19 +13,21 @@
 </head>
 <body>
     <header>
-        <a href="./index.html" class="logo link"><span class="logo-color-blue">Web</span>Studio</a>
+       <div class="nav container">
+        <a href="./index.html" class="logo up link"><span class="logo-color-blue">Web</span>Studio</a>
         <nav>
         <ul class="site-nav list">
-            <li><a class="site-nav-link link current" href="./index.html">Студія</a></li>
-            <li><a class="site-nav-link link" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="site-nav-link link" href="">Контакти</a></li>
+            <li class="item"><a class="site-nav-link link current" href="./index.html">Студія</a></li>
+            <li class="item"><a class="site-nav-link link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="item"><a class="site-nav-link link" href="">Контакти</a></li>
         </ul>
         </nav>
         <!-- address -->
-        <ul class="site-nav list">
-            <li><a class="address-up link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="address-up link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>                
+        <ul class="auth-nav list">
+            <li class="item"><a class="address-up link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="item"><a class="address-up link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>    
+       </div>            
     </header>
     <main>
         <!-- Шапка -->
@@ -35,8 +37,8 @@
         </section>
         <!-- Особливості -->
         <section>
-            <!-- спрятать заголовок h2 в css -->
-            <h2 class="feature-title">Особливості</h2>
+            <div class="container">
+                <h2 class="feature-title">Особливості</h2>
             <ul class="feature list">
                 <li>
                     <h3 class="feature-name">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -55,19 +57,25 @@
                     <p class="feature-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                 </li>
             </ul>
+            </div>
+            <!-- спрятать заголовок h2 в css -->
+            
         </section>
         <!-- Чим ми займаємося -->
         <section>
-            <h2 class="work-title">Чим ми займаємося</h2>
-            <ul class="work list">
+            <div class="container">
+                <h2 class="work-title">Чим ми займаємося</h2>
+                <ul class="work list">
                 <li class="work-foto"><img src="./img/box1.jpg" alt="Сірий планшет на столі" width="370"></li>
                 <li class="work-foto"><img src="./img/box2.jpg" alt="Дівчина за комп'ютером" width="370"></li>
                 <li class="work-foto"><img src="./img/box3.jpg" alt="Планшет з малюнком" width="370"></li>
-            </ul>
+                </ul>
+            </div>
         </section>
         <!-- Наша команда -->
         <section>
-            <h2 class="team-title">Наша команда</h2>
+            <div class="container">
+                <h2 class="team-title">Наша команда</h2>
             <ul class="team list">
                 <li>
                     <img class="team-img" src="./img/img1.jpg" alt="Фото Ігор Дем'яненко" width="270">
@@ -90,10 +98,12 @@
                     <p class="team-work" lang="en">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
     <footer class="footer">
-        <a class="logo" href="./index.html"><span class="logo-color-blue">Web</span><span class="logo-color-white">Studio</span></a> 
+        <div class="container">
+            <a class="logo link" href="./index.html"><span class="logo-color-blue">Web</span><span class="logo-color-white">Studio</span></a> 
         <address>
         <ul class="address list">
             <li class="address-name">м. Київ, пр-т Лесі Українки, 26</li>
@@ -101,7 +111,7 @@
             <li><a class="address-down link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
         </address>
+        </div>
     </footer>
-    
 </body>
 </html>

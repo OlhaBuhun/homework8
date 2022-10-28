@@ -13,6 +13,11 @@
     --primary-black-color:#000000;
     --fist-color-bcg-button: #F5F4FA;
     --footer-color:#2F303A;
+    --border-color:#ECECEC;
+}
+
+html {
+    box-sizing: border-box;
 }
 
 body {
@@ -26,9 +31,26 @@ body {
     letter-spacing: 0.03em;
 
 }
+
+header {
+    background-color: var(--primary-white-color);
+    outline: 1px solid var(--border-color) ;
+}
+
+.container {
+
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid orange;
+}
+
 address {
     font-style: normal;
 }
+
 h1,
 h2,
 h3,
@@ -39,6 +61,7 @@ p {
     margin-top: 0;
     margin-bottom: 0;
 }
+
 ul,
 ol {
     margin-top: 0;
@@ -64,16 +87,24 @@ ol {
     font-weight: 700;
     font-size: 26px;
 }
+
+.logo.up {
+    margin-right: 93px;
+}
+
 .logo:hover,
 .logo:focus {
     color: var(--accent-color);
 }
+
 .logo-color-blue {
     color: var(--accent-color);
 }
+
 .logo-color-white {
     color: var(--primary-white-color);
 }
+
 /* Site nav */
 .site-nav-link,
 .address-up,
@@ -89,6 +120,35 @@ ol {
     color: var(--primary-text-color);
 }
 
+.nav {
+    display: flex;
+    height: 80px;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+}
+
+.site-nav .item + .item {
+    margin-left: 50px;   
+}
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+.auth-nav .item + .item {
+    margin-left: 50px;
+}
+
+.site-nav-link,
+.address-up {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .site-nav-link:hover,
 .site-nav-link:focus,
 .address-up:hover,
@@ -102,16 +162,29 @@ ol {
 
 /* Main */
 /* Шапка */
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+
+    border-color: var(--footer-color);
+}
+
 .hero-title {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
+
 .hero-button {
+    display: inline-block;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     font-family: inherit;
@@ -120,11 +193,10 @@ ol {
     line-height: 1.88;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    display: flex;
     align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
 }
+
 .hero-button:hover,
 .hero-button:focus {
     color: var(--primary-black-color);
