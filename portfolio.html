@@ -1,111 +1,118 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Portfolio</title>
-</head>
-<body>
-    <header class="header">
-        <div class="nav container">
-         <a href="./index.html" class="logo up link"><span class="logo-color-blue">Web</span>Studio</a>
-         <nav>
-         <ul class="site-nav list">
-             <li class="item"><a class="site-nav-link link" href="./index.html">Студія</a></li>
-             <li class="item"><a class="site-nav-link link curren" href="./portfolio.html">Портфоліо</a></li>
-             <li class="item"><a class="site-nav-link link" href="">Контакти</a></li>
-         </ul>
-         </nav>
-         <!-- address -->
-         <ul class="auth-nav list">
-             <li class="item"><a class="address-up link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-             <li class="item"><a class="address-up link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-         </ul>    
-        </div>            
-     </header>
-    <main>
-        <!-- filters -->
-        <section class="partfolio">
-            <!-- приховати заголовок -->
-            <div class="container">
-                <h1 class="filter-title">Зразки робіт</h1>
-                <ul class="filter list">
-                <li><button class="filter-button" type="button">Усі</button></li>
-                <li><button class="filter-button" type="button">Веб-сайти</button></li>
-                <li><button class="filter-button" type="button">Додатки</button></li>
-                <li><button class="filter-button" type="button">Дизайн</button></li>
-                <li><button class="filter-button" type="button">Маркетинг</button></li>
-                </ul>
-                <ul class="partfolio-list list">
-                <li>
-                    <img class="partfolio-foto" src="./img/portf1.jpg" alt="Фото трьох співробітників" width="370">
-                    <!-- <div class="container"> -->
-                    <h2 class="partfolio-title">Технокряк</h2>
-                    <p class="partfolio-name">Веб-сайт</p>
-                    <!-- </div> -->
-                </li>
-                <li>
-                    <img class="partfolio-foto" src="./img/portf2.jpg" alt="Два баскетболісти" width="370">
-                    <h2 class="partfolio-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-                    <p class="partfolio-name">Дизайн</p>
-                </li>
-                <li>
-                    <img class="partfolio-foto" src="./img/portf3.jpg" alt="Лого ресторану" width="370">
-                    <h2 class="partfolio-title">Ресторан <span lang="en">Seafood</span></h2>
-                    <p class="partfolio-name">Додаток</p>
-                </li>
-                <li>
-                    <img class="partfolio-foto" src="./img/portf4.jpg" alt="Навушникі" width="370">
-                    <h2 class="partfolio-title">Проєкт <span lang="en">Prime</span></h2>
-                    <p class="partfolio-name">Маркетинг</p>
-                </li>
-                <li>
-                    <img class="partfolio-foto" src="./img/portf5.jpg" alt="Дві коробки" width="370">
-                    <h2 class="partfolio-title">Проєкт <span lang="en">Boxes</span></h2>
-                    <p class="partfolio-name">Додаток</p>
-                </li>
-                <li>
-                    <img class="partfolio-foto" src="./img/portf6.jpg" alt="Монітор" width="370">
-                    <h2 class="partfolio-title" lang="en">Inspiration has no Borders</h2>
-                    <p class="partfolio-name">Веб-сайт</p>
-                </li>
-                <li>
-                    <img class="partfolio-foto" src="./img/portf7.jpg" alt="Відкрита книга" width="370">
-                    <h2 class="partfolio-title">Видання <span lang="en">Limited Edition</span></h2>
-                    <p class="partfolio-name">Дизайн</p>
-                </li>
-                <li>
-                    <img class="partfolio-foto" src="./img/portf8.jpg" alt="Єтикетка" width="370">
-                    <h2 class="partfolio-title">Проєкт <span lang="en">LAB</span></h2>
-                    <p class="partfolio-name">Маркетинг</p>
-                </li>
-                <li>
-                    <img class="partfolio-foto" src="./img/portf9.jpg" alt="Лоптоп" width="370">
-                    <h2 class="partfolio-title" lang="en">Growing Bussiness</h2>
-                    <p class="partfolio-name">Додаток</p>
-                </li>
-                </ul>
-            </div>
-        </section>
-      
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <a class="logo link" href="./index.html"><span class="logo-color-blue">Web</span><span class="logo-color-white">Studio</span></a> 
-        <address>
-        <ul class="address list">
-            <li class="address-name">м. Київ, пр-т Лесі Українки, 26</li>
-            <li><a class="address-down link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="address-down link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-        </address>
-        </div>
-    </footer> 
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Portfolio</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="nav container">
+				<a href="./index.html" class="logo up link"><span class="logo-color-blue">Web</span>Studio</a>
+				<nav>
+					<ul class="site-nav list">
+						<li class="item"><a class="site-nav-link link" href="./index.html">Студія</a></li>
+						<li class="item"><a class="site-nav-link link curren" href="./portfolio.html">Портфоліо</a></li>
+						<li class="item"><a class="site-nav-link link" href="">Контакти</a></li>
+					</ul>
+				</nav>
+				<!-- address -->
+				<ul class="auth-nav list">
+					<li class="item"><a class="address-up link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+					<li class="item"><a class="address-up link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+				</ul>
+			</div>
+		</header>
+		<main>
+			<!-- filters -->
+			<section class="partfolio">
+				<!-- приховати заголовок -->
+				<div class="container">
+					<h1 class="filter-title">Зразки робіт</h1>
+					<ul class="filter list">
+						<li><button class="filter-button" type="button">Усі</button></li>
+						<li><button class="filter-button" type="button">Веб-сайти</button></li>
+						<li><button class="filter-button" type="button">Додатки</button></li>
+						<li><button class="filter-button" type="button">Дизайн</button></li>
+						<li><button class="filter-button" type="button">Маркетинг</button></li>
+					</ul>
+					<ul class="partfolio-list list">
+						<li>
+							<img class="partfolio-foto" src="./img/portf1.jpg" alt="Фото трьох співробітників" width="370" />
+							<!-- <div class="container"> -->
+							<h2 class="partfolio-title">Технокряк</h2>
+							<p class="partfolio-name">Веб-сайт</p>
+							<!-- </div> -->
+						</li>
+						<li>
+							<img class="partfolio-foto" src="./img/portf2.jpg" alt="Два баскетболісти" width="370" />
+							<h2 class="partfolio-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+							<p class="partfolio-name">Дизайн</p>
+						</li>
+						<li>
+							<img class="partfolio-foto" src="./img/portf3.jpg" alt="Лого ресторану" width="370" />
+							<h2 class="partfolio-title">Ресторан <span lang="en">Seafood</span></h2>
+							<p class="partfolio-name">Додаток</p>
+						</li>
+						<li>
+							<img class="partfolio-foto" src="./img/portf4.jpg" alt="Навушникі" width="370" />
+							<h2 class="partfolio-title">Проєкт <span lang="en">Prime</span></h2>
+							<p class="partfolio-name">Маркетинг</p>
+						</li>
+						<li>
+							<img class="partfolio-foto" src="./img/portf5.jpg" alt="Дві коробки" width="370" />
+							<h2 class="partfolio-title">Проєкт <span lang="en">Boxes</span></h2>
+							<p class="partfolio-name">Додаток</p>
+						</li>
+						<li>
+							<img class="partfolio-foto" src="./img/portf6.jpg" alt="Монітор" width="370" />
+							<h2 class="partfolio-title" lang="en">Inspiration has no Borders</h2>
+							<p class="partfolio-name">Веб-сайт</p>
+						</li>
+						<li>
+							<img class="partfolio-foto" src="./img/portf7.jpg" alt="Відкрита книга" width="370" />
+							<h2 class="partfolio-title">Видання <span lang="en">Limited Edition</span></h2>
+							<p class="partfolio-name">Дизайн</p>
+						</li>
+						<li>
+							<img class="partfolio-foto" src="./img/portf8.jpg" alt="Єтикетка" width="370" />
+							<h2 class="partfolio-title">Проєкт <span lang="en">LAB</span></h2>
+							<p class="partfolio-name">Маркетинг</p>
+						</li>
+						<li>
+							<img class="partfolio-foto" src="./img/portf9.jpg" alt="Лоптоп" width="370" />
+							<h2 class="partfolio-title" lang="en">Growing Bussiness</h2>
+							<p class="partfolio-name">Додаток</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<a class="logo link" href="./index.html"
+					><span class="logo-color-blue">Web</span><span class="logo-color-white">Studio</span></a
+				>
+				<address>
+					<ul class="address list">
+						<li class="address-name">м. Київ, пр-т Лесі Українки, 26</li>
+						<li><a class="address-down link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+						<li><a class="address-down link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+					</ul>
+				</address>
+			</div>
+		</footer>
+	</body>
 </html>

@@ -1,0 +1,9 @@
+{
+    "prettier.arrowParens": "avoid",
+    "prettier.bracketSameLine": false,
+    "prettier.printWidth": 120,
+    "prettier.proseWrap": "never",
+    "prettier.trailingComma": "all",
+    "prettier.useTabs": true,
+    "editor.tabSize": 2
+}
