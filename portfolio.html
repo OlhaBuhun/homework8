@@ -12,7 +12,7 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="nav container">
          <a href="./index.html" class="logo up link"><span class="logo-color-blue">Web</span>Studio</a>
          <nav>
@@ -31,25 +31,24 @@
      </header>
     <main>
         <!-- filters -->
-       <div class="container">
-        <section>
+        <section class="partfolio">
             <!-- приховати заголовок -->
-            <h1 class="filter-title">Зразки робіт</h1>
-            <ul class="filter list">
+            <div class="container">
+                <h1 class="filter-title">Зразки робіт</h1>
+                <ul class="filter list">
                 <li><button class="filter-button" type="button">Усі</button></li>
                 <li><button class="filter-button" type="button">Веб-сайти</button></li>
                 <li><button class="filter-button" type="button">Додатки</button></li>
                 <li><button class="filter-button" type="button">Дизайн</button></li>
                 <li><button class="filter-button" type="button">Маркетинг</button></li>
-            </ul>
-        </section>
-        <!-- parfolio -->
-        <section>
-            <ul class="partfolio list">
+                </ul>
+                <ul class="partfolio-list list">
                 <li>
                     <img class="partfolio-foto" src="./img/portf1.jpg" alt="Фото трьох співробітників" width="370">
+                    <!-- <div class="container"> -->
                     <h2 class="partfolio-title">Технокряк</h2>
                     <p class="partfolio-name">Веб-сайт</p>
+                    <!-- </div> -->
                 </li>
                 <li>
                     <img class="partfolio-foto" src="./img/portf2.jpg" alt="Два баскетболісти" width="370">
@@ -91,9 +90,10 @@
                     <h2 class="partfolio-title" lang="en">Growing Bussiness</h2>
                     <p class="partfolio-name">Додаток</p>
                 </li>
-            </ul>
+                </ul>
+            </div>
         </section>
-       </div>
+      
     </main>
     <footer class="footer">
         <div class="container">

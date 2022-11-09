@@ -38,7 +38,6 @@ header {
 }
 
 .container {
-
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -77,6 +76,10 @@ ol {
 
 .link {
     text-decoration: none; 
+}
+
+img {
+    display: block;
 }
 
 /* logo */
@@ -120,15 +123,19 @@ ol {
     color: var(--primary-text-color);
 }
 
+/* ----Header---- */
 .nav {
     display: flex;
     height: 80px;
+    /* padding-top: 32px;
+    padding-bottom: 32px; */
     /* justify-content: center; */
     align-items: center;
 }
 
 .site-nav {
     display: flex;
+    align-items: center;
 }
 
 .site-nav .item + .item {
@@ -185,15 +192,18 @@ ol {
 
 .hero-button {
     display: inline-block;
+    align-items: center;
+    min-width: 216px;
+    padding: 10px 20px;
+
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
     border-radius: 4px;
-    align-items: center;
     letter-spacing: 0.06em;
 }
 
@@ -204,10 +214,15 @@ ol {
 }
 
 /* Особливості */
+.feature {
+    background-color: aqua;
+}
+
 .feature-title {
 
 }
 .feature-name {
+    margin-bottom: 10px;
     color: var(--title-text-color);
     font-weight: 700;
     line-height: 1.15;
@@ -216,7 +231,11 @@ ol {
 .feature-text {
     line-height: 1.7;
 }
+
 /* Чим ми займаємося */
+.work {
+    background-color: pink;
+}
 .work-title,
 .team-title {
     color: var(--title-text-color);
@@ -229,6 +248,12 @@ ol {
 
 }
 /* Наша команда */
+
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--fist-color-bcg-button);
+}
 .team-img {
 
 }
