@@ -14,6 +14,7 @@
 	--fist-color-bcg-button: #f5f4fa;
 	--footer-color: #2f303a;
 	--border-color: #ececec;
+	--border-second-color: #EEEEEE;
 }
 
 html {
@@ -367,8 +368,20 @@ img {
 
 }
 .partfolio-foto {
+	/* margin-bottom: 20px; */
 }
+
+.partfolio-item {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	border-right: 1px solid var(--border-second-color);
+	border-bottom: 1px solid var(--border-second-color);
+	border-left: 1px solid var(--border-second-color);
+}
+
 .partfolio-title {
+	margin-bottom: 4px;
 	color: var(--title-text-color);
 	font-weight: 700;
 	font-size: 18px;
