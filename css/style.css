@@ -135,10 +135,9 @@ img {
 }
 .nav {
 	display: flex;
-	height: 80px;
-	/* padding-top: 32px;
-    padding-bottom: 32px; */
-	/* justify-content: center; */
+	/* height: 80px; */
+	padding-top: 24px;
+  padding-bottom: 25px;
 	align-items: center;
 }
 
@@ -314,8 +313,23 @@ img {
 }
 
 /* footer */
-.address-down,
+
+.footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.address-down {
+	color: rgba(255, 255, 255, 0.6);
+	line-height: 1.71;
+}
+.address-item:not(:last-child) {
+	margin-bottom: 9px;
+}
+
 .address-name {
+	margin-top: 20px;
+	margin-bottom: 9px;
 	color: var(--primary-white-color);
 	line-height: 1.71;
 }
@@ -323,8 +337,6 @@ img {
 .footer,
 .hero {
 	background-color: var(--footer-color);
-}
-.address-name {
 }
 
 /* Партфоліо */
@@ -339,7 +351,7 @@ img {
 	margin-bottom: 50px;
 }
 
-.filter-item-button:not(last-child) {
+.filter-item-button:not(:last-child) {
 	margin-right: 8px;
 }
 
