@@ -383,14 +383,21 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
+	justify-content: center;
 }
 .partfolio-foto {
 	/* margin-bottom: 20px; */
 }
 
 .partfolio-item {
+	/* flex-basis: calc((100%-9*30px)/9); */
 	display: flex;
 	flex-direction: column;
+	
+	
+}
+
+.partfolio-single {
 	padding: 20px;
 	border-right: 1px solid var(--border-second-color);
 	border-bottom: 1px solid var(--border-second-color);
