@@ -15,6 +15,7 @@
 	--footer-color: #2f303a;
 	--border-color: #ececec;
 	--border-second-color: #eeeeee;
+	--hero-color: #C4C4C4;
 }
 
 html {
@@ -178,12 +179,21 @@ img {
 
 /* Main */
 /* Шапка */
+
 .hero {
+	max-width: 1600px;
+	min-height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-fon.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	padding-top: 200px;
 	padding-bottom: 200px;
 	text-align: center;
+	background-color: var(--hero-color);
 
-	border-color: var(--footer-color);
 }
 
 .hero-title {
@@ -211,7 +221,7 @@ img {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
-	/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	letter-spacing: 0.06em;
 }
@@ -341,7 +351,7 @@ img {
 }
 
 .footer,
-.hero {
+ {
 	background-color: var(--footer-color);
 }
 
