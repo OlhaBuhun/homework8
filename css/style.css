@@ -16,6 +16,7 @@
 	--border-color: #ececec;
 	--border-second-color: #eeeeee;
 	--hero-color: #C4C4C4;
+	--icon-color: #AFB1B8;
 }
 
 html {
@@ -296,16 +297,23 @@ img {
 	background-color: var(--fist-color-bcg-button);
 }
 
+.team-main {
+	padding-top: 30px;
+	padding-left: 32px;
+	padding-right: 32px;
+}
+
 .team-list {
 	display: flex;
-
 	justify-content: space-between;
 }
 
 .team-card {
 	display: flex;
+	padding-bottom: 30px;
 	align-items: center;
 	flex-direction: column;
+	background-color: var(--primary-white-color);
 }
 
 .team-title {
@@ -324,9 +332,39 @@ img {
 }
 
 .team-work {
-	margin-bottom: 30px;
+	margin-bottom: 16px;
 	color: var(--primary-text-color);
 	font-size: 16px;
+}
+
+.team-social-list {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.team-social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	background-color: var(--primary-white-color);
+	border-radius: 50%;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+	background-color: var(--accent-color);
+}
+
+.team-social-link:hover .team-social-icon,
+.team-social-link:focus .team-social-icon {
+	fill: var(--primary-white-color);
+}
+
+.team-social-icon {
+	fill: var(--icon-color);
 }
 
 /* ====Clients=== */
