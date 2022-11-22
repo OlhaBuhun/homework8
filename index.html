@@ -23,15 +23,25 @@
 				<a href="./index.html" class="logo up link"><span class="logo-color-blue">Web</span>Studio</a>
 				<nav>
 					<ul class="site-nav list">
-						<li class="item"><a class="site-nav-link link current" href="./index.html">Студія</a></li>
-						<li class="item"><a class="site-nav-link link" href="./portfolio.html">Портфоліо</a></li>
-						<li class="item"><a class="site-nav-link link" href="">Контакти</a></li>
+						<li class="site-nav-item"><a class="site-nav-link link current" href="./index.html">Студія</a></li>
+						<li class="site-nav-item"><a class="site-nav-link link" href="./portfolio.html">Портфоліо</a></li>
+						<li class="site-nav-item"><a class="site-nav-link link" href="">Контакти</a></li>
 					</ul>
 				</nav>
 				<!-- address -->
 				<ul class="auth-nav list">
-					<li class="item"><a class="address-up link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-					<li class="item"><a class="address-up link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+					<li class="auth-nav-item">
+						<a class="address-up link" href="mailto:info@devstudio.com">
+							<svg class="auth-nav-item-icon envelope" widht="16" height="12">
+								<use href="./img/sprite.svg#icon-envelope"></use></svg>
+							info@devstudio.com</a>
+					</li>
+					<li class="auth-nav-item">
+						<a class="address-up link" href="tel:+380961111111">
+							<svg class="auth-nav-item-icon smartphone" widht="10" height="16">
+								<use href="./img/sprite.svg#icon-smartphone"></use></svg>
+							+38 096 111 11 11</a>
+					</li>
 				</ul>
 			</div>
 		</header>
@@ -47,30 +57,38 @@
 					<h2 class="feature-title">Особливості</h2>
 					<ul class="feature-list list">
 						<li class="feature-item">
-							<svg class="feature-icon"widht="70" height="70">
-								<use href="./img/sprite.svg#icon-antenna"></use>
-							</svg>
+							<div class="feature-icon-bcg">
+								<svg class="feature-icon" widht="70" height="70">
+									<use href="./img/sprite.svg#icon-antenna"></use>
+								</svg>
+							</div>
 							<h3 class="feature-name">УВАГА ДО ДЕТАЛЕЙ</h3>
 							<p class="feature-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
 						</li>
 						<li class="feature-item">
-							<svg class="feature-icon" widht="70" height="70">
-								<use href="./img/sprite.svg#icon-clock"></use>
-							</svg>
+							<div class="feature-icon-bcg">
+								<svg class="feature-icon" widht="70" height="70">
+									<use href="./img/sprite.svg#icon-clock"></use>
+								</svg>
+							</div>
 							<h3 class="feature-name">ПУНКТУАЛЬНІСТЬ</h3>
 							<p class="feature-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
 						</li>
 						<li class="feature-item">
-							<svg class="feature-icon">
-								<use href="./img/sprite.svg#icon-diagram" widht="70" height="70"></use>
-							</svg>
+							<div class="feature-icon-bcg">
+								<svg class="feature-icon" widht="70" height="70">
+									<use href="./img/sprite.svg#icon-diagram"></use>
+								</svg>
+							</div>
 							<h3 class="feature-name">ПЛАНУВАННЯ</h3>
 							<p class="feature-text">Так само консультація з широким активом значною мірою зумовлює.</p>
 						</li>
 						<li class="feature-item">
-							<svg class="feature-icon" widht="70" height="70">
-								<use href="./img/sprite.svg#icon-astronaut"></use>
-							</svg>
+							<div class="feature-icon-bcg">
+								<svg class="feature-icon" widht="70" height="70">
+									<use href="./img/sprite.svg#icon-astronaut"></use>
+								</svg>
+							</div>
 							<h3 class="feature-name">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
 							<p class="feature-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
 						</li>
@@ -122,7 +140,7 @@
 								</li>
 								<li class="team-social-item">
 									<a class="team-social-link" href="">
-										<svg class="team-social-icon widht="20" height="20">
+										<svg class="team-social-icon" widht="20" height="20">
 											<use href="./img/sprite.svg#icon-linkedin"></use>
 										</svg>
 									</a>
@@ -288,7 +306,8 @@
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="container">
+			<div class="footer-main container">
+				<div class="footer-address">
 				<a class="logo link" href="./index.html"
 					><span class="logo-color-blue">Web</span><span class="logo-color-white">Studio</span></a
 				>
@@ -299,7 +318,41 @@
 						<li><a class="address-down link" href="tel:+380961111111">+38 096 111 11 11</a></li>
 					</ul>
 				</address>
+				</div>
+				<div class="join">
+				<h2 class="join-title">ПРИЄДНУЙТЕСЬ</h2>
+				<ul class="join-social-list list">
+					<li class="join-social-item">
+						<a class="join-social-link" href="">
+							<svg class="join-social-icon" widht="20" height="20">
+								<use href="./img/sprite.svg#icon-instagram"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="join-social-item">
+						<a class="join-social-link" href="">
+							<svg class="join-social-icon" widht="20" height="20">
+								<use href="./img/sprite.svg#icon-twitter"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="join-social-item">
+						<a class="join-social-link" href="">
+							<svg class="join-social-icon" widht="20" height="20">
+								<use href="./img/sprite.svg#icon-facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="join-social-item">
+						<a class="join-social-link" href="">
+							<svg class="join-social-icon" widht="20" height="20">
+								<use href="./img/sprite.svg#icon-linkedin"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
 			</div>
+		</div>	
 		</footer>
 	</body>
 </html>
