@@ -36,7 +36,6 @@ body {
 
 header {
 	background-color: var(--primary-white-color);
-	outline: 1px solid var(--border-color);
 }
 
 .container {
@@ -45,7 +44,7 @@ header {
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	outline: 2px solid orange;
+	/* outline: 2px solid orange; */
 }
 
 address {
@@ -139,15 +138,12 @@ img {
 }
 .nav {
 	display: flex;
-	/* height: 80px; */
-	padding-top: 24px;
-	padding-bottom: 25px;
 	align-items: center;
 }
 
 .site-nav {
 	display: flex;
-	align-items: center;
+	/* align-items: center; */
 }
 
 .site-nav-item:not(:last-child) {
@@ -157,13 +153,13 @@ img {
 .auth-nav {
 	display: flex;
 	margin-left: auto;
-	align-items: center;
 }
 
 .auth-nav-item {
 	/* display:flex; */
 	/* width: 161px; */
-	/* justify-content: flex-end; */
+	/* min-height: 16px; */
+	/* justify-content:center; */
 	/* align-items: center; */
 }
 
@@ -173,27 +169,22 @@ img {
 
 .address-up {
 	display: flex;
-	/* width: 161px; */
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
+	color: var(--primary-text-color);
+	/* margin-left: 10px; */
 }
 
-.auth-nav-item-icon {
-	/* display: flex; */
-	/* margin: 0; */
-	/* padding: 0; */
-	/* margin-right: 10px; */
-}
-
-.auth-nav-item-icon .smartphone {
-	width: 10px;
-	height: 16px;
-}
-
-.auth-nav-item-icon .envelope {
+.smartphone {
+	fill: var(--primary-text-color);
 	width: 16px;
 	height: 12px;
+	margin-right: 10px;
+}
+
+.envelope {
+	fill: var(--primary-text-color);
+	width: 10px;
+	height: 16px;
+	margin-right: 10px;
 }
 
 .site-nav-link,
@@ -208,6 +199,10 @@ img {
 .address-up:focus,
 .current {
 	color: var(--accent-color);
+}
+
+.auth-nav-item-icon:hover {
+	fill: var(--accent-color);
 }
 
 /* Студія */
@@ -326,7 +321,7 @@ img {
 .work {
 	display: flex;
 	justify-content: space-between;
-	background-color: pink;
+	/* background-color: pink; */
 }
 
 .work-title {
@@ -605,4 +600,9 @@ img {
 	color: var(--primary-text-color);
 	font-size: 16px;
 	line-height: 1.88;
+}
+
+.partfolio-item:hover,
+.partfolio-item:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16) ;
 }
