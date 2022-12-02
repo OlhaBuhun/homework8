@@ -15,8 +15,8 @@
 	--footer-color: #2f303a;
 	--border-color: #ececec;
 	--border-second-color: #eeeeee;
-	--hero-color: #C4C4C4;
-	--icon-color: #AFB1B8;
+	--hero-color: #c4c4c4;
+	--icon-color: #afb1b8;
 }
 
 html {
@@ -97,6 +97,8 @@ img {
 	font-family: Raleway, sans-serif;
 	font-weight: 700;
 	font-size: 26px;
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo.up {
@@ -191,18 +193,23 @@ img {
 .address-up {
 	padding-top: 32px;
 	padding-bottom: 32px;
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav-link:hover,
 .site-nav-link:focus,
 .address-up:hover,
 .address-up:focus,
+.address-up:hover .auth-nav-item-icon,
+.address-up:focus .auth-nav-item-icon,
 .current {
 	color: var(--accent-color);
+	fill: var(--accent-color);
 }
 
-.auth-nav-item-icon:hover {
-	fill: var(--accent-color);
+.auth-nav-item-icon {
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Студія */
@@ -215,7 +222,7 @@ img {
 	height: 600px;
 	margin-left: auto;
 	margin-right: auto;
-	background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-fon.jpg);
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-fon.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -223,7 +230,6 @@ img {
 	padding-bottom: 200px;
 	text-align: center;
 	background-color: var(--hero-color);
-
 }
 
 .hero-title {
@@ -254,6 +260,8 @@ img {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	letter-spacing: 0.06em;
+
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -290,12 +298,12 @@ img {
 	border-radius: 4px;
 }
 
- .feature-icon {
+.feature-icon {
 	/* display: flex; */
 	/* padding: 25px 50px;
 	margin-bottom: 30px;
 	background-color: var(--fist-color-bcg-button);
-	border-radius: 4px; */ 
+	border-radius: 4px; */
 }
 
 .feature-title,
@@ -390,7 +398,6 @@ img {
 .team-social-list {
 	display: flex;
 	justify-content: space-between;
-
 }
 
 .team-social-link {
@@ -401,6 +408,8 @@ img {
 	height: 44px;
 	background-color: var(--primary-white-color);
 	border-radius: 50%;
+
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:hover,
@@ -423,12 +432,10 @@ img {
 	margin-bottom: 50px;
 }
 
-
 .clients-list {
 	display: flex;
 	justify-content: space-between;
 	/* align-items: center; */
-
 }
 
 .clients-item {
@@ -444,6 +451,7 @@ img {
 	border: 1px solid var(--icon-color);
 	border-radius: 4px;
 
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon {
@@ -497,7 +505,7 @@ img {
 	margin-bottom: 20px;
 	font-weight: 700;
 	font-size: 14px;
-	line-height: 1,14;
+	line-height: 1, 14;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--primary-white-color);
@@ -518,6 +526,8 @@ img {
 	height: 44px;
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 50%;
+
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-social-icon {
@@ -554,6 +564,8 @@ img {
 	line-height: 1.62;
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 	border-radius: 4px;
+
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -577,8 +589,7 @@ img {
 	/* flex-basis: calc((100%-9*30px)/9); */
 	display: flex;
 	flex-direction: column;
-	
-	
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .partfolio-single {
@@ -604,5 +615,37 @@ img {
 
 .partfolio-item:hover,
 .partfolio-item:focus {
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16) ;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.partfolio-foto-ower {
+	position: relative;
+	overflow: hidden;
+}
+
+.partfolio-item-ower {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 370px;
+	height: 294px;
+
+	font-size: 18px;
+	line-height: 1, 56;
+	letter-spacing: 0.03em;
+	padding: 63px 24px;
+
+	color: var(--primary-white-color);
+	background-color: var(--accent-color);
+
+	opacity: 0;
+	transform: translateY(100%);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.partfolio-item:hover .partfolio-item-ower,
+.partfolio-item:focus .partfolio-item-ower {
+	opacity: 1;
+	transform: translateY(0);
 }
