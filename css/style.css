@@ -106,7 +106,9 @@ img {
 }
 
 .logo:hover,
-.logo:focus {
+.logo:focus, 
+.logo-color-white:hover,
+.logo-color-white:focus {
 	color: var(--accent-color);
 }
 
@@ -116,6 +118,7 @@ img {
 
 .logo-color-white {
 	color: var(--primary-white-color);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Site nav */
@@ -648,4 +651,46 @@ img {
 .partfolio-item:focus .partfolio-item-ower {
 	opacity: 1;
 	transform: translateY(0);
+}
+
+/* =====Modol====== */
+
+.main-backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+.main-modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 528px;
+	height: 581px;
+	transform: translate(-50%, -50%);
+	background-color: var(--primary-white-color);
+
+}
+
+.modal-close-btn {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-color: transparent;
+	padding: 0;
+	cursor: pointer;
+
 }
