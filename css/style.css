@@ -737,13 +737,29 @@ position: relative;
 	padding: 0;
 	cursor: pointer;
 
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+
 }
+
+.modal-close-btn:hover {
+	fill: var(--accent-color);
+}
+
+
+/* === Form ==== */
+
 
 .contact-form-field {
 	display: block;
 	position: relative;
+	
+	cursor: pointer;
+}
+
+.contact-form-field:not(:last-child) {
 	margin-bottom: 28px;
 }
+
 
 .form-title {
 	margin-bottom: 12px;
@@ -753,6 +769,8 @@ position: relative;
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--primary-black-color);
+
+	cursor: pointer;
 }
 
 .contact-form-input {
@@ -762,6 +780,7 @@ position: relative;
 	border-radius: 4px;
 	margin-top: 4px;
 	padding-left: 42px;
+	cursor: pointer;
 }
 
 .contact-form-icon {
@@ -792,7 +811,8 @@ position: relative;
 }
 
 .contact-form-field:focus-within > .contact-form-icon, 
-.contact-form-field:focus-within > .contact-form-text {
+.contact-form-field:focus-within > .contact-form-text,
+.contact-form-field:focus-within > .contact-form-textarea {
 	fill: var(--accent-color);
 	color: var(--accent-color);
 }
@@ -803,6 +823,8 @@ position: relative;
 }
 
 .contact-form-messege {
+	position: relative;
+
 	width: 100%;
 	height: 120px;
 	resize: none;
@@ -813,11 +835,28 @@ position: relative;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	margin-top: 4px;
+
+	cursor: pointer;
+}
+
+.contact-form-textarea {
+	position: absolute;
+	bottom: 50%;
+	left: 40px;
+
+	transform: translateY(50%);
+
+	transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-form-messege:focus {
 	outline: none;
 	border-color: var(--accent-color);	
+}
+
+.contact-form-messege:focus + .contact-form-textarea, 
+.contact-form-messege:not(:placeholder-shown) +.contact-form-textarea {
+    transform: translate(-40px, -60px)
 }
 
 .contact-form-messege::placeholder {
@@ -837,6 +876,8 @@ position: relative;
 
 	font-size: 14px;
 	line-height: 1.71;
+
+	cursor: pointer;
 }
 
 .contact-form-checkbox {
@@ -852,6 +893,8 @@ position: relative;
 	margin-right: 9px;
 
 	border: 2px solid var(--primary-black-color);
+
+	cursor: pointer;
 }
 
 .contact-form-checkbox:checked + .checkbox-ikon {
@@ -892,5 +935,6 @@ position: relative;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	border: 1px solid;
+	cursor: pointer;
 
 }
