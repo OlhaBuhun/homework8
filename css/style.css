@@ -1001,6 +1001,10 @@ position: relative;
 	background-origin: center;	
 }
 
+.contact-form-checkbox:focus + .checkbox-ikon {
+	border-color: var(--accent-color);
+}
+
 .contact-form-contract {
 	color: var(--accent-color);
 	margin-left: 4px;
