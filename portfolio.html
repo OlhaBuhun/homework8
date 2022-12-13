@@ -231,7 +231,57 @@
 						</li>
 					</ul>
 				</div>
+				<form class="footer-form">
+					<label class="footer-form-label">Підпишіться на розсилку
+						<input type="email" name="mail" class="footer-form-input" placeholder="E-mail">
+					</label>
+						<button type="submit" class="footer-form-btn">Підписатися</button>
+				</form>
 			</div>
 		</footer>
+		<div class="main-backdrop is-hidden" data-modal>
+			<div class="main-modal">
+				<button type="button" class="modal-close-btn" data-modal-close>
+					<svg class="modal-close-icon" width="18" height="18">
+						<use href="./img/sprite.svg#close-x" ></use>
+					</svg>
+				</button>
+				<form class="contact-form">
+					<p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
+					<label class="contact-form-field">
+						<input type="text" class="contact-form-input" name="user-name" required placeholder=" ">
+						<span class="contact-form-text">Ім'я</span>
+						<svg class="contact-form-icon" width="18" height="18">
+							<use href="./img/sprite.svg#icon-person-black" ></use>
+						</svg>
+					</label>
+					<label class="contact-form-field">
+						<input type="tel" class="contact-form-input" name="user-phone" required placeholder=" ">
+						<span class="contact-form-text">Телефон</span>
+						<svg class="contact-form-icon" width="18" height="18">
+							<use href="./img/sprite.svg#icon-phone-black" ></use>
+						</svg>
+					</label>
+					<label class="contact-form-field">
+						<input type="email" class="contact-form-input" name="user-mail" required placeholder=" ">
+						<span class="contact-form-text">Пошта</span>
+						<svg class="contact-form-icon" width="18" height="18">
+							<use href="./img/sprite.svg#icon-email-black" ></use>
+						</svg>
+					</label>
+					<label class="contact-form-field">
+						<textarea name="user-messege" placeholder="Введіть текст"  class="contact-form-messege"></textarea>
+						<span class="contact-form-textarea">Коментар</span>
+					</label>
+						<label  class="contact-form-label">
+						<input type="checkbox" name="police"  required class="contact-form-checkbox">
+						<span class="checkbox-ikon"></span>
+						Погоджуюся з розсилкою та приймаю <a href="" class="contact-form-contract">Умови договору</a>
+					</label>
+					<button type="submit" class="contact-form-submit-btn">Відправити</button>
+				</form>
+			</div>
+		</div>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
