@@ -161,13 +161,13 @@ img {
 	margin-left: auto;
 }
 
-.auth-nav-item {
+/* .auth-nav-item { */
 	/* display:flex; */
 	/* width: 161px; */
 	/* min-height: 16px; */
 	/* justify-content:center; */
 	/* align-items: center; */
-}
+/* } */
 
 .auth-nav-item:not(:last-child) {
 	margin-right: 30px;
