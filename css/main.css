@@ -13,7 +13,7 @@
   --second-color-bcg-button: #188CE8;
 }
 
-.current {
+.link.current {
   color: var(--accent-color);
 }
 
