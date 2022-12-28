@@ -638,20 +638,17 @@ position: relative;
 
 /* Партфоліо */
 
-/* main */
-.filter-title {
-	visibility: hidden;
-	pointer-events: none;
-	position: absolute;
-}
 
-.filter-list {
+
+
+
+/* .filter {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 50px;
 }
 
-.filter-item-button:not(:last-child) {
+.filter__item:not(:last-child) {
 	margin-right: 8px;
 }
 
@@ -675,35 +672,39 @@ position: relative;
 	background-color: var(--accent-color);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
-}
+} */
 
 /* Partfolio */
-
-.partfolio-list {
+/* 
+.partfolio {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
 	justify-content: center;
-}
-.partfolio-foto {
-	/* margin-bottom: 20px; */
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 
-.partfolio-item {
-	/* flex-basis: calc((100%-9*30px)/9); */
+.partfolio__title {
+	visibility: hidden;
+	pointer-events: none;
+	position: absolute;
+}
+
+.partfolio__item {
 	display: flex;
 	flex-direction: column;
 	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.partfolio-single {
+.partfolio__inner {
 	padding: 20px;
 	border-right: 1px solid var(--border-second-color);
 	border-bottom: 1px solid var(--border-second-color);
 	border-left: 1px solid var(--border-second-color);
 }
 
-.partfolio-title {
+.partfolio__title {
 	margin-bottom: 4px;
 	color: var(--title-text-color);
 	font-weight: 700;
@@ -711,23 +712,23 @@ position: relative;
 	line-height: 2;
 	letter-spacing: 0.06em;
 }
-.partfolio-name {
+.partfolio__name {
 	color: var(--primary-text-color);
 	font-size: 16px;
 	line-height: 1.88;
 }
 
-.partfolio-item:hover,
-.partfolio-item:focus {
+.partfolio__item:hover,
+.partfolio__item:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.partfolio-foto-ower {
+.partfolio__over {
 	position: relative;
 	overflow: hidden;
 }
 
-.partfolio-item-ower {
+.partfolio__popup {
 	display: block;
 	position: absolute;
 	top: 0;
@@ -748,11 +749,11 @@ position: relative;
 	transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.partfolio-item:hover .partfolio-item-ower,
-.partfolio-item:focus .partfolio-item-ower {
+.partfolio__item:hover .partfolio__popup,
+.partfolio__item:focus .partfolio__popup {
 	opacity: 1;
 	transform: translateY(0);
-}
+} */
 
 
 
