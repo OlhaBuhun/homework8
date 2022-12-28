@@ -5,10 +5,12 @@
 @import './base/container';
 
 @import './components/logo';
+@import './components/backdrop';
 
-@import './layout/page-header';
+@import './layout/header';
 @import './layout/hero';
 @import './layout/feature';
 @import './layout/work';
 @import './layout/team';
 @import './layout/clients';
+@import './layout/footer';
