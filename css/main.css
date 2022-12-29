@@ -436,6 +436,9 @@ header {
 .site-nav__link {
   position: relative;
 }
+.site-nav__link:hover, .site-nav__link:focus {
+  color: var(--accent-color);
+}
 
 .site-nav__link,
 .auth-nav__link {
@@ -467,6 +470,10 @@ header {
   display: flex;
   color: var(--primary-text-color);
 }
+.auth-nav__link:hover, .auth-nav__link:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
 
 .auth-nav__item:not(:last-child) {
   margin-right: 30px;
@@ -475,6 +482,10 @@ header {
 .auth-nav__icon {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.auth-nav__link:hover .auth-nav__icon, .auth-nav__link:focus .auth-nav__icon {
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .auth-nav__icon--smartphone {
@@ -489,16 +500,6 @@ header {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-}
-
-.site-nav__link:hover,
-.site-nav__link:focus,
-.auth-nav__link:hover,
-.auth-nav__link:focus,
-.auth-nav__link:hover .auth-nav__icon,
-.auth-nav__link:focus .auth-nav__icon {
-  color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 .hero {
@@ -550,9 +551,7 @@ header {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.hero__button:hover,
-.hero__button:focus {
+.button--hero:hover, .button--hero:focus {
   color: var(--primary-black-color);
   background-color: var(--primary-text-color);
 }
@@ -754,8 +753,6 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 206px;
-  height: 80px;
 }
 
 .join-social__link {
@@ -875,6 +872,9 @@ header {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-address__link:hover, .footer-address__link:focus {
+  color: var(--accent-color);
+}
 
 .footer-address__item {
   color: var(--primary-white-color);
@@ -882,9 +882,6 @@ header {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-address__link:hover,
-.footer-address__link:focus,
 .footer-address__item:hover {
   color: var(--accent-color);
 }
@@ -928,46 +925,39 @@ header {
   color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
 }
-
 .footer-form__input::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer-form__input::-moz-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer-form__input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer-form__input::-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer-form__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer-form__input:focus {
   outline: none;
   border-color: var(--accent-color);
-  /* background-color: var(--footer-color); */
 }
 
 .button-footer {
@@ -1003,7 +993,6 @@ header {
   transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .button-footer::after {
   content: "";
   width: 24px;
@@ -1013,9 +1002,7 @@ header {
   background-size: contain;
   background-origin: border-box;
 }
-
-.button-footer:hover,
-.button-footer:focus {
+.button-footer:hover, .button-footer:focus {
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -1098,7 +1085,7 @@ header {
   border-left: 1px solid var(--border-second-color);
 }
 
-.partfolio__title {
+.partfolio__label {
   margin-bottom: 4px;
   color: var(--title-text-color);
   font-weight: 700;
