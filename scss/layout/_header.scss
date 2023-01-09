@@ -1,3 +1,10 @@
+
+header {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: var(--primary-white-color);
+}
+
 .nav {
 	display: flex;
 	justify-content: space-between;
@@ -11,9 +18,14 @@
 .auth-nav {
 	display: none;
 }
-// header {
-// 	background-color: var(--primary-white-color);
-// }
+
+.mobile-menu-button {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	line-height: 0;
+}
+
 
 // .page-header {
 // 	border: 1px solid var(--border-color);

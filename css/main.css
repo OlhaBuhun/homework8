@@ -516,6 +516,12 @@ img {
   fill: var(--primary-white-color);
 }
 
+header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--primary-white-color);
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -534,6 +540,13 @@ img {
 
 .auth-nav {
   display: none;
+}
+
+.mobile-menu-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
 }
 
 .hero {
