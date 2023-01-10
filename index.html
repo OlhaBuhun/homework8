@@ -29,7 +29,8 @@
 						<li class="site-nav__item"><a class="site-nav__link link" href="">Контакти</a></li>
 					</ul>
 				</nav>
-				<button type="button" class="mobile-menu-button">
+				<button type="button" class="mobile-menu-button" js-open-menu aria-expanded="false"
+				aria-controls="mobile-menu">
 					<svg class="mobile-menu-button__ikon" width="40" height="40">
 						<use href="./img/sprite.svg#icon-burger-menu_40px"></use>
 					</svg>		
@@ -54,9 +55,9 @@
 					</li>
 				</ul>
 			</div>
-			<div class="mobile-menu">
+			<div class="mobile-menu" js-menu-container>
 				<div class="container mobile-menu__container">
-					<button type="button" class="mobile-menu__close-button">
+					<button type="button" class="mobile-menu__close-button" js-close-menu>
 						<svg class="mobile-menu__ikon" width="40" height="40">
 							<use href="./img/sprite.svg#icon-burger-close_40px"></use>
 						</svg>		
@@ -407,7 +408,7 @@
 				</form>
 			</div>
 		</footer> -->
-		<!-- <div class="main__backdrop is-hidden" data-modal>
+		 <div class="main__backdrop is-hidden" data-modal>
 			<div class="main__modal">
 				<button type="button" class="button__modal-close" data-modal-close>
 					<svg class="modal-close-btn__icon" width="18" height="18">
@@ -450,6 +451,7 @@
 				</form>
 			</div>
 		</div>
-		<script src="./js/modal.js"></script> -->
+		<script src="./js/modal.js"></script>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>
