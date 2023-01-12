@@ -668,7 +668,12 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 93px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .site-nav__link {
     position: relative;
@@ -738,19 +743,19 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .logo {
-    font-size: 26px;
-  }
   .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .site-nav {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 93px;
   }
   .auth-nav {
     display: -webkit-box;
@@ -759,8 +764,14 @@ img {
     margin-left: auto;
   }
   .auth-nav__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+  .auth-nav__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 .hero {
