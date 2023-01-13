@@ -894,23 +894,19 @@ img {
 }
 /* Особливості */
 .feature {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.feature__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+.feature-card:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .feature-card__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 270px;
+  min-width: 270px;
   height: 120px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -938,12 +934,34 @@ img {
   font-weight: 700;
   line-height: 1.15;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .feature-card__text {
   line-height: 1.7;
 }
 
+@media screen and (min-width: 768px) {
+  .feature__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+  .feature-card {
+    margin: 0;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature-card {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
+}
 /* Чим ми займаємося */
 .work__list {
   display: -webkit-box;

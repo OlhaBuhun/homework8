@@ -1,17 +1,19 @@
 /* Особливості */
 .feature {
-	display: flex;
+	// display: flex;
+	padding-top: 60px;
+	padding-bottom: 60px;
  
 }
 
-.feature__list {
-	display: flex;
-	gap: 30px;
+
+.feature-card:not(:last-child) {
+	margin-bottom: 30px;
 }
 
 .feature-card__wrapper {
 	display: flex;
-	width: 270px;
+	min-width: 270px;
 	height: 120px;
 	justify-content: center;
 	align-items: center;
@@ -35,8 +37,70 @@
 	font-weight: 700;
 	line-height: 1.15;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .feature-card__text {
 	line-height: 1.7;
 }
+
+@media screen and (min-width:768px) {
+	.feature__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+
+	.feature-card {
+		margin: 0;
+		flex-basis: calc((100% - 30px) / 2);
+	}
+}
+
+@media screen and (min-width:1200px) {
+	.feature-card {
+		flex-basis: calc((100% - 90px) / 4);
+	}
+}
+
+// .feature {
+// 	display: flex;
+ 
+// }
+
+// .feature__list {
+// 	display: flex;
+// 	gap: 30px;
+// }
+
+// .feature-card__wrapper {
+// 	display: flex;
+// 	width: 270px;
+// 	height: 120px;
+// 	justify-content: center;
+// 	align-items: center;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	padding: 25px 100px;
+// 	margin-bottom: 30px;
+// 	background-color: var(--fist-color-bcg-button);
+// 	border-radius: 4px;
+// }
+
+// .feature__title {
+// 	visibility: hidden;
+// 	pointer-events: none;
+// 	position: absolute;
+// }
+
+// .feature-card__name {
+// 	margin-bottom: 10px;
+// 	color: var(--title-text-color);
+// 	font-weight: 700;
+// 	line-height: 1.15;
+// 	text-transform: uppercase;
+// }
+
+// .feature-card__text {
+// 	line-height: 1.7;
+// }
