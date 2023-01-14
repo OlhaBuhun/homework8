@@ -1025,9 +1025,6 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: var(--primary-white-color);
-}
-
-.team-card:not(:last-child) {
   margin-bottom: 30px;
 }
 
