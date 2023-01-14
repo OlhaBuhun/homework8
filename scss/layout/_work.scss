@@ -1,17 +1,29 @@
 /* Чим ми займаємося */
-.work__list {
-	display: flex;
-	justify-content: space-between;
+
+.work {
+	display: none;
 }
 
-.work__title {
-	margin-bottom: 50px;
-}
 
-.work__title {
-	color: var(--title-text-color);
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.16;
-	text-align: center;
+@media screen and (min-width:1200px) {
+	.work {
+		display: block;
+	}
+
+	.work__list {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.work__title {
+		margin-bottom: 50px;
+	}
+	
+	.work__title {
+		color: var(--title-text-color);
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.16;
+		text-align: center;
+	}
 }
