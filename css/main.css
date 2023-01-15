@@ -1069,11 +1069,6 @@ img {
   }
 }
 /* ====Clients=== */
-.clients__wrapper {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .clients__title {
   margin-bottom: 30px;
   color: var(--title-text-color);
