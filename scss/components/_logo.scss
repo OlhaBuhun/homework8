@@ -11,6 +11,10 @@
 		&:focus {
 			color: var(--accent-color);
 		}
+
+		@media screen and (min-widht: 1200px) {
+			font-size: 26px;
+		}
 		
 
 
@@ -31,9 +35,5 @@
 	}
 }
 
-@media screen and (min-widht: 1200px) {
-	.logo {
-		font-size: 26px;
-	}	
-}
+
 
