@@ -5,12 +5,6 @@
 
 }
 
-.team__wrapper {
-	padding-top: 60px;
-	padding-bottom: 60px;
-	// padding-left: 32px;
-	// padding-right: 32px;
-}
 
 .team__title {
 	color: var(--title-text-color);
@@ -59,6 +53,7 @@
 	.team__list {
 		display: flex;
 		flex-wrap: wrap;
+		align-items: stretch;
 		gap: 30px;
 	}
 	.team-card {

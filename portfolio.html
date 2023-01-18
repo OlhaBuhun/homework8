@@ -21,7 +21,7 @@
 	<body>
 		<header class="page-header">
 			<div class="nav container">
-				<a href="./index.html" class="logo link"><span class="logo--color-blue">Web</span>Studio</a>
+				<a href="./index.html" class="logo link"><span class="logo logo--color-blue">Web</span>Studio</a>
 				<nav>
 					<ul class="site-nav list">
 						<li class="site-nav__item"><a class="site-nav__link link" href="./index.html">Студія</a></li>
@@ -29,6 +29,12 @@
 						<li class="site-nav__item"><a class="site-nav__link link" href="">Контакти</a></li>
 					</ul>
 				</nav>
+				<button type="button" class="mobile-menu-button js-open-menu" aria-expanded="false"
+				aria-controls="mobile-menu">
+					<svg class="mobile-menu-button__ikon" width="40" height="40">
+						<use href="./img/sprite.svg#icon-burger-menu_40px"></use>
+					</svg>		
+				</button>
 				<!-- address -->
 				<ul class="auth-nav list">
 					<li class="auth-nav__item">
@@ -49,6 +55,44 @@
 					</li>
 				</ul>
 			</div>
+			<div class="mobile-menu js-menu-container" id="mobile-menu">
+				<div class="container mobile-menu__container">
+					<button type="button" class="mobile-menu__close-button js-close-menu">
+						<svg class="mobile-menu__ikon" width="40" height="40">
+							<use href="./img/sprite.svg#icon-burger-close_40px"></use>
+						</svg>		
+					</button>
+					<ul class="mobile-menu__list list">
+						<li class="mobile-menu__item">
+							<a class="mobile-menu__link link" href="./index.html">Студія</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a class="mobile-menu__link link" href="./portfolio.html">Портфоліо</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a class="mobile-menu__link link" href="">Контакти</a>
+						</li>
+					</ul>
+					<ul class="mobi-menu-auth__list list">
+						<li class="mobi-menu-auth__item"><a class="mobi-menu-auth__phone link" href="tel:+380961111111">
+							+38 096 111 11 11</a
+						></li>
+						<li class="mobi-menu-auth__item"><a class="mobi-menu-auth__mail link" href="mailto:info@devstudio.com">
+							info@devstudio.com</a
+						></li>
+					</ul>
+					<ul class="mobi-social__list list">
+						<li class="mobi-social__item mobi-social__item--side"><a class="mobile-social__link link" href="">Instagram
+						</a></li>
+						<li class="mobi-social__item mobi-social__item--side"><a class="mobile-social__link link" href="">Twitter
+						</a></li>
+						<li class="mobi-social__item mobi-social__item--side"><a class="mobile-social__link link" href="">Facebook
+						</a></li>
+						<li class="mobi-social__item"><a class="mobile-social__link link" href="">LinkedIn
+						</a></li>
+					</ul>
+				</div>
+			</div>
 		</header>
 		<main>
 			<!-- filters -->
@@ -65,7 +109,7 @@
 					<ul class="partfolio__list list">
 						<li class="partfolio__item">
 							<div class="partfolio__over">
-								<img class="partfolio__image" src="./img/portf1.jpg" alt="Фото трьох співробітників" width="370" />
+								<img class="partfolio__image" src="./img/portf1.jpg" alt="Фото трьох співробітників"  />
 								<p class="partfolio__popup">
 									Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 									відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -188,7 +232,7 @@
 			<div class="footer-wrapper container">
 				<div class="footer-address">
 					<a class="logo link" href="./index.html"
-						><span class="logo--color-blue">Web</span><span class="logo--color-white">Studio</span></a
+						><span class="logo logo--color-blue">Web</span><span class="logo logo--color-white">Studio</span></a
 					>
 					<address>
 						<ul class="footer-address__list list">
