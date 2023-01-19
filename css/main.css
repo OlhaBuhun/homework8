@@ -1040,7 +1040,10 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: var(--primary-white-color);
-  margin-bottom: 30px;
+}
+
+.team-card:not(:first-child) {
+  margin-top: 30px;
 }
 
 .team-card__name {
@@ -1360,9 +1363,8 @@ img {
 }
 /* Partfolio */
 .partfolio__list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 370px);
-  gap: 30px;
+  display: block;
+  margin-bottom: 60px;
 }
 
 .partfolio__title {
@@ -1372,16 +1374,14 @@ img {
 }
 
 .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px 8px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-bottom: 50px;
-}
-
-.filter__item:not(:last-child) {
-  margin-right: 8px;
+  max-width: 326px;
+  margin-bottom: 40px;
 }
 
 .filter-button {
@@ -1414,6 +1414,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 404px;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1424,8 +1425,13 @@ img {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.partfolio__item:not(:first-child) {
+  margin-top: 30px;
+}
+
 .partfolio__inner {
-  padding: 20px;
+  padding: 20px 24px;
+  height: 146px;
   border-right: 1px solid var(--border-second-color);
   border-bottom: 1px solid var(--border-second-color);
   border-left: 1px solid var(--border-second-color);
@@ -1475,4 +1481,42 @@ img {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-width: 575px;
+    gap: 8px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .partfolio__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .partfolio__item {
+    margin-bottom: 0;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .partfolio__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -25,14 +25,14 @@
 	align-items: center;
 	flex-direction: column;
 	background-color: var(--primary-white-color);
-	margin-bottom: 30px;
+	// margin-bottom: 30px;
 }
 
 
 
-// .team-card:not(:last-child) {
-// 	margin-bottom: 30px;
-// }
+.team-card:not(:first-child) {
+	margin-top: 30px;
+}
 
 
 .team-card__name {
