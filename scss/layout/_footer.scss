@@ -178,6 +178,13 @@
 		height: 252px;
 
 	}
+	.footer-address  {
+		display: block;
+		text-align: left;
+		// justify-content: flex-end;
+		// align-items: flex-start;
+		margin-right: 94px;
+	}
 	.footer-form {
 		display: flex;
 		margin-left: 0;
@@ -187,6 +194,9 @@
 	.footer-form__input {
 		min-width: 358px;
 		margin-right: 12px;
+	}
+	.footer-form__label {
+		text-align: left;
 	}
 		
 }
