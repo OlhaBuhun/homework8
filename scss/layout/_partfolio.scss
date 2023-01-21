@@ -47,8 +47,8 @@
 	display: flex;
 	// position: relative;
 	flex-direction: column;
-	max-width: 450px;
-	height: 404px;
+	min-width: 450px;
+	// height: 404px;
 	
 
 	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -137,19 +137,19 @@
 	.partfolio__list {
 			display: flex;
 			flex-wrap: wrap;
-			gap: 20px;
+			gap: 30px;
 			// justify-content: center;
 			// align-items: center;
 	}
 	.partfolio__item {
-		max-width: 354px;
+		min-width: 354px;
 		flex-basis: calc((100% - 30px) / 2);
 	}
 }
 
 @media screen and (min-width:1200px) {
 	.partfolio__item {
-		max-width: 370px;
+		min-width: 370px;
 		flex-basis: calc((100% - 60px) / 3);
 	}
 	
