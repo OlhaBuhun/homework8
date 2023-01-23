@@ -59,9 +59,12 @@
 	}
 }
 
+.partfolio__item > .partfolio__image {
+	// flex-grow: 1;
+}
 
-
-.partfolio__inner {
+.partfolio__item > .partfolio__inner {
+	flex-grow: 1;
 	padding: 20px 24px;
 	border-right: 1px solid var(--border-second-color);
 	border-bottom: 1px solid var(--border-second-color);
@@ -138,11 +141,13 @@
 			display: flex;
 			flex-wrap: wrap;
 			gap: 30px;
+			// flex-grow: 1;
 			// justify-content: center;
 			// align-items: center;
 	}
 	.partfolio__item {
 		min-width: 354px;
+		// height: 440px;
 		flex-basis: calc((100% - 30px) / 2);
 	}
 }
@@ -150,6 +155,7 @@
 @media screen and (min-width:1200px) {
 	.partfolio__item {
 		min-width: 370px;
+		// height: 404px;
 		flex-basis: calc((100% - 60px) / 3);
 	}
 	
