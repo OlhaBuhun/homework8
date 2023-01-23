@@ -1,6 +1,9 @@
 .link.current {
 	color: var(--accent-color);
 }
+
+
+@media screen and (min-width:768px) {
 	.current::after {
 		position: absolute;
 		content:"" ;
@@ -13,4 +16,5 @@
 		background-color: var(--accent-color);
 	
 	
+}
 }
